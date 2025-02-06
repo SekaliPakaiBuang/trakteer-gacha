@@ -63,12 +63,12 @@ Ini biar bisa nampilin tulisan "berapa unit = 1 spin".
 
 -  **Collection Mode**  
 Collection mode adalah mode untuk menentukan bagaimana mengubah jumlah traktiran agar jadi spin.
-    1. **Normal Mode** (Default)  
-    Unit Requirement itu jumlah traktiran minimum. Jika sekali traktir lebih dari atau sama dengan jumlah unit requirement, dapat 1 kali spin, begitu pula sebaliknya.
-    2. **Stack Mode**  
-    Unit Requirement itu jumlah traktiran minimum **dan berlaku kelipatan**. Misal minimal 10 dan traktiran 30, bakal dapat 3 kali spin. Sisa tidak diakumulasikan.
-    3. **Accumulative Mode**  
-    Sama kaya Stack tapi sisa diakumulasikan, biar spin berikutnya lebih murah karena sudah patungan sama yang traktir sebelumnya.
+  1. **Normal Mode** (Default)  
+  Unit Requirement itu jumlah traktiran minimum. Jika sekali traktir lebih dari atau sama dengan jumlah unit requirement, dapat 1 kali spin, begitu pula sebaliknya.
+  2. **Stack Mode**  
+  Unit Requirement itu jumlah traktiran minimum **dan berlaku kelipatan**. Misal minimal 10 dan traktiran 30, bakal dapat 3 kali spin. Sisa tidak diakumulasikan.
+  3. **Accumulative Mode**  
+  Sama kaya Stack tapi sisa diakumulasikan, biar spin berikutnya lebih murah karena sudah patungan sama yang traktir sebelumnya.
 
 - **Autospin on Donation** (Default: off)  
 Spin bakal langsung dilakukan saat ada traktiran masuk.
