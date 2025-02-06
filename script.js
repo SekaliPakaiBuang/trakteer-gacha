@@ -14,8 +14,8 @@ const selectedElement = document.querySelector(".result:nth-child(3)");
 
 // Initialize Local Storage
 if (!localStorage.unitAmount) {
-    localStorage.unitAmount = inputUnitAmount.valueAsNumber;
-    inputUnitAmount.valueAsNumber = 10;
+    localStorage.unitAmount = 10;
+    inputUnitAmount.valueAsNumber = Number(localStorage.unitAmount);
 } else {
     inputUnitAmount.valueAsNumber = localStorage.unitAmount;
 }
