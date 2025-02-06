@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+/* Importing the 'Space Grotesk' font from Google Fonts */
+
+/* Global styles */
+html {
+    color: #f5f5f5;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+* {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    box-sizing: border-box;
+    transition: all 0.2s;
+}
+
+/* Body styles */
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 8px;
+    gap: 8px;
+    width: 320px;
+}
+
+/* Container styles */
+.container {
+    padding: 8px;
+    border-radius: 2px;
+    gap: 8px;
+    display: flex;
+    width: 100%;
+}
+
+.container--vertical {
+    flex-direction: column;
+}
+
+.container--dark {
+    background: #263238;
+    color: #f5f5f5;
+}
+
+.container--bright {
+    background: linear-gradient(to bottom, #f5f5f5, #e0e0e0);
+    color: #000000;
+}
+
+.container--compact {
+    padding: 0;
+}
+
+/* Text styles */
+.text-bold {
+    font-weight: 700;
+}
+
+/* Button styles */
+.btn {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+/* UI element styles */
+.element--fit {
+    width: 100%;
+}
+
+.element--centered {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Result styles */
+#gacha-result {
+    height: 144px;
+}
+
+.result {
+    width: 100%;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.result:nth-child(3) {
+    font-size: 1.25rem;
+    background: radial-gradient(circle, rgba(245, 245, 245, 0), rgba(245, 245, 245, 0.5));
+}
+
+.result--selected {
+    animation: finish calc(1s/3) step-end 3;
+}
+
+/* Keyframes */
+@keyframes finish {
+    0% {
+        background: radial-gradient(circle, rgba(245, 245, 245, 0), rgba(245, 245, 245, 0.5));
+    }
+
+    50% {
+        background: none;
+    }
+
+    100% {
+        background: radial-gradient(circle, rgba(245, 245, 245, 0), rgba(245, 245, 245, 0.5));
+    }
+}

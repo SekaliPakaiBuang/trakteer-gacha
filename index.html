@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SekaliPakaiBuang's Trakteer Gacha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="info" class="container container--dark element--centered">
+        10 Memory Chips = 1 Spin
+    </div>
+
+    <div id="gacha-result" class="container container--vertical container--dark element--centered">
+        <div class="result">element -2</div>
+        <div class="result">element -1</div>
+        <div class="result text-bold">element 0</div>
+        <div class="result">element +1</div>
+        <div class="result">element +2</div>
+    </div>
+
+    <div id="spin" class="container element--centered container--bright btn text-bold" onclick="spin()">
+        10 Spins Left
+    </div>
+
+    <div id="settings" class="container container--dark container--vertical">
+        <div class="settings__title">
+            Channel ID <a target="_blank" href="https://trakteer.id/manage/webhook/websocket">(get one here)</a>
+        </div>
+        <input type="text" name="channel_id">
+
+        <div class="settings__title">Unit Requirement</div>
+        <div class="container container--compact">
+            <input required class="element--fit" type="number" name="unit_amount" value="0" step="1" min="1">
+            <input required class="element--fit" type="text" name="unit_name">
+        </div>
+
+        <div class="settings__title">Collection Mode</div>
+        <select name="mode">
+            <option value="normal">Normal</option>
+            <option value="stack">Stack</option>
+            <option value="accumulative">Accumulative</option>
+        </select>
+
+        <div class="container container--compact">
+            <input type="checkbox" name="autospin">
+            <div class="settings__title">Autospin on Donation</div>
+        </div>
+
+        <div class="settings__title">
+            Items to Pick
+        </div>
+        <textarea required name="list" style="resize: none;" rows="8"></textarea>
+
+        <div class="container container--compact text-bold">
+            <div class="btn container container--bright element--centered" onclick="randomize()">Randomize</div>
+            <div class="btn container container--bright element--centered" onclick="save()">Save</div>
+        </div>
+    </div>
+
+    <script defer src="https://assets.trakteer.id/js/trws.min.js"></script>
+    <script defer src="script.js"></script>
+</body>
+
+</html>
