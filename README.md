@@ -1,3 +1,6 @@
+> [!NOTE]
+> Trakteer sudah menyediakan fitur gacha melalui **Stream Overlay v2**.  
+> Silakan gunakan itu saja.
 
 # Trakteer Gacha by SekaliPakaiBuang
 
